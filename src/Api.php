@@ -31,9 +31,9 @@ class Api
     public function getSevenDays(): string
     {
         $output = '';
-        for ($i=0; $i<7; $i++) {
+        for ($i = 0; $i < 7; ++$i) {
             $oneDay = 60 * 60 * 24;
-            $dayString = date('l', time() + $oneDay *$i);
+            $dayString = date('l', time() + $oneDay * $i);
             $this->setDate($dayString);
             $output .= $this->when() . "\n";
         }

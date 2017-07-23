@@ -39,8 +39,8 @@ class ApiTest extends PHPUnit_Framework_TestCase
     {
         $api = new Api();
         $expected = '';
-        for ($i=0; $i<7; $i++) {
-            $expected .= date('l', time() + 60 * 60 * 24 *$i) . "\n";
+        for ($i = 0; $i < 7; ++$i) {
+            $expected .= date('l', time() + 60 * 60 * 24 * $i) . "\n";
         }
 
         $this->assertEquals($expected, $api->getSevenDays());
