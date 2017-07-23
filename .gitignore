@@ -8,3 +8,5 @@ vendor/
 *.workspace
 
 build/coverage/
+
+*.cache
