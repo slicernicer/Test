@@ -2,13 +2,11 @@
     "name": "emilkreilgaard/vildt1",
     "type": "project",
     "require-dev": {
-        "phpunit/phpunit": "^4.8"
+        "phpunit/phpunit": "5.*"
     },
     "autoload": {
         "psr-4": {
             "Emil\\Vildt1\\": "src/"
         }
-    },
-    "require-dev": {
     }
 }
